@@ -1,0 +1,9 @@
+name: pftest
+version: 0.0.1
+description: test
+autohr: kyorohiro
+environment:
+  sdk: '>=2.0.0-dev.8.0'
+dependencies:
+dev_dependencies:
+  test: any
