@@ -10,7 +10,7 @@ Future<dynamic>main() async {
     data.buffer.asUint8List()[i] = i;
   }
 
-  unit.test("test1", (){
+  unit.test("bytes: asUint8List offset", (){
     int start = new DateTime.now().millisecondsSinceEpoch;
     int v = 0;
     for(int i=0;i<s;i++) {
@@ -19,10 +19,10 @@ Future<dynamic>main() async {
       }
     }
     int end = new DateTime.now().millisecondsSinceEpoch;
-    print("#1 ${end - start} ${v}");
+    print("#bytes: asUint8List# ${end - start} ${v}");
   });
 
-  unit.test("test2", (){
+  unit.test("bytes: asUint8List", (){
     int start = new DateTime.now().millisecondsSinceEpoch;
     int v = 0;
     for(int i=0;i<s;i++) {
@@ -31,10 +31,10 @@ Future<dynamic>main() async {
       }
     }
     int end = new DateTime.now().millisecondsSinceEpoch;
-    print("#2 ${end - start} ${v}");
+    print("#bytes: asUint8List# ${end - start} ${v}");
   });
 
-  unit.test("test3", (){
+  unit.test("bytes: getUint8", (){
     int start = new DateTime.now().millisecondsSinceEpoch;
     int v = 0;
     for(int i=0;i<s;i++) {
@@ -43,10 +43,10 @@ Future<dynamic>main() async {
       }
     }
     int end = new DateTime.now().millisecondsSinceEpoch;
-    print("#3 ${end - start} ${v}");
+    print("#bytes: getUint8# ${end - start} ${v}");
   });
 
-  unit.test("test4", (){
+  unit.test("bytes: Uint8List", (){
     int start = new DateTime.now().millisecondsSinceEpoch;
     int v = 0;
     for(int i=0;i<s;i++) {
@@ -55,6 +55,6 @@ Future<dynamic>main() async {
       }
     }
     int end = new DateTime.now().millisecondsSinceEpoch;
-    print("#4 ${end - start} ${v}");
+    print("#bytes: Uint8List# ${end - start} ${v}");
   });
 }
